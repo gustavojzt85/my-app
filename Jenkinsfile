@@ -52,7 +52,7 @@ DevOps Team""", cc: '', from: '', replyTo: '', subject: "${env.JOB_NAME} Success
 */
 node{
 	stage('SCM Checkout'){
-		git 'https://github.com/gustavojzt85/my-app/'
+		git 'https://github.com/gustavojzt85/my-app'
 	}
 	stage('Compile package'){
 		sh 'mvn package'
